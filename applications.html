@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Applications</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Your Logo" style="width: 300px; height: 100px; margin-right: 6600px; ">
+        <h1>Applications</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="applications.html"><i class="fas fa-tasks"></i> Applications</a></li>
+                <li><a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="applications">
+            <h2>Applications</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>AppNo</th>
+                        <th>AppType</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="AppNo">20230700</td>
+                        <td>Type A</td>
+                        <td>
+                            <div class="status-container">
+                                <div class="status-edit">
+                                    <button class="edit-btn" onclick="toggleEditStatus(this)">Edit</button>
+                                </div>
+                                <select class="status" onchange="changeStatus(this)" disabled>
+                                    <option value="new">New</option>
+                                    <option value="revision">Revision</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="approved">Approved</option>
+                                    <option value="extension">Extension</option>
+                                    <option value="modification">Modification</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>2023-07-25</td>
+                        <td><button class="delete-btn" onclick="deleteRow(this)">Delete</button></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4285f4;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 100px;
+    border: 2px solid #ccc;
+  }
+  
+  .header-btn {
+    background-color: #3c78d8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .header-btn:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .header-btn:hover {
+    background-color: #2a56b7;
+  }
+  
